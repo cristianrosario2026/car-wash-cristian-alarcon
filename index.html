@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicio profesional de lavado de autos. Reserva tu cita fácil y rápido.">
+    <title>Car Wash</title>
+    <link rel="icon" href="assets/logo.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <h1>Car Wash</h1>
+        <div class="header-right">
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <nav id="menu">
+                <a href="#">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#precios">Precios</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2 data-aos="fade-up">Deja tu auto como nuevo 🚗✨</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Servicio profesional de lavado</p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="cards">
+
+            <div class="card" data-aos="fade-up">
+                <i class="fas fa-car"></i>
+                <h3>Lavado Exterior + Interior</h3>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-wind"></i>
+                <h3>Aspirado</h3>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-star"></i>
+                <h3>Encerado</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="images/x-trail.jpg">
+            <img src="images/sierra.jpg">
+            <img src="images/colorado.jpg">
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios">
+        <h2>Precios</h2>
+        <div class="prices">
+            <div class="price">
+                <h3>Lavado Exterior + Interior</h3>
+                <p>Auto Chico — $120 MXN</p>
+                <p>Auto Mediano — $170 MXN</p>
+                <p>Auto Camioneta — $200 MXN</p>
+            </div>
+            <div class="price">
+                <h3>Aspirado</h3>
+                <p>$50 MXN</p>
+            </div>
+            <div class="price">
+                <h3>Encerado</h3>
+                <p>$100 MXN</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section id="opiniones">
+        <h2>Opiniones de los clientes</h2>
+        <div class="opiniones">
+            <div class="opinion">Excelente servicio, lo recomiendo ⭐⭐⭐⭐⭐</div>
+            <div class="opinion">Mi auto quedó como nuevo, lo recomiendo 100% 🚗</div>
+            <div class="opinion">Dejaron mi camioneta impecable, excelente trabajo ✨</div>
+            <div class="opinion">Muy buena atención y rapidez en el servicio 👌</div>
+            <div class="opinion">Muy buen precio y excelente calidad 💯</div>
+            <div class="opinion">Personal muy amable y profesional 🙌</div>
+            <div class="opinion">Muy puntuales y responsables, recomendado 👍</div>
+        </div>
+    </section>
+
+    <!-- UBICACION -->
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.420537593924!2d-108.9880285742777!3d25.756669611468922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f78014fe0d5%3A0xae572ff3fb2d430b!2sBlvrd%20Pedro%20Anaya%201769%2C%2081295%20Los%20Mochis%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1776450294616!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/cristianrosario30092000@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Car Wash">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_replyto" value="email">
+
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo" required>
+            <input type="number" name="telefono" placeholder="Telefono" required>
+            <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+            <a href="https://wa.me/5216681516491?text=🚗 ¡Hola,%20quiero%20reservar%20una%20cita.%20Gracias.!"
+                target="_blank" class="btn-whatsapp">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                <span>Reserva por WhatsApp</span>
+            </a>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Car Wash</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
