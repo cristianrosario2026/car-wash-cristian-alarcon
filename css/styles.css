@@ -167,10 +167,6 @@ section {
     transition: .3s;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
 /* PRECIOS */
 .prices {
     display: flex;
