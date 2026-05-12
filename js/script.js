@@ -1,12 +1,5 @@
 AOS.init();
 
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('active');
+function cerrarMenu() {
+    document.getElementById("menu").checked = false;
 }
-
-document.querySelectorAll('#menu a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.getElementById('menu').classList.remove('active');
-    });
-});

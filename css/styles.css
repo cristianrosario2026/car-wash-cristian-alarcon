@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif
+    font-family: 'Segoe UI', sans-serif;
+    list-style: none;
 }
 
 body {
@@ -11,42 +12,57 @@ body {
     color: #fff
 }
 
-/* NAV */
-header {
+
+/* MENU ESTILO BARBERIA */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     background: #3b3b3b;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     border-bottom: 1px solid white;
+    z-index: 1000;
 }
 
-/* AGRUPAR NAV + ICONO */
-.header-right {
+.logo-text {
+    color: #38bdf8;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar ul {
     display: flex;
-    align-items: center;
+    gap: 25px;
+    list-style: none;
 }
 
-header h1 {
-    color: #38bdf8
-}
-
-nav {
-    display: flex
-}
-
-nav a {
-    color: white;
-    margin-left: 25px;
+.navbar ul li a {
+    color: #fff;
     text-decoration: none;
     transition: .3s;
 }
 
-nav a:hover {
-    color: #38bdf8
+.navbar ul li a:hover {
+    color: #38bdf8;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
 }
 
 
@@ -58,17 +74,19 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/car-washing.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/civic.jpg');
     background-size: cover;
+    background-position: center;
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
-.hero h2 {
-    font-size: 3.5rem
-}
-
+.hero h2,
 .hero p {
-    margin: 15px 0
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 
 .btn {
@@ -236,13 +254,6 @@ footer {
 }
 
 
-/* menu hamburguesa */
-/* OCULTAR ICONO EN PC */
-header .header-right .menu-toggle {
-    display: none;
-}
-
-
 /* PAGINA GRACIAS */
 .pagina-gracias {
     min-height: 100vh;
@@ -250,7 +261,7 @@ header .header-right .menu-toggle {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/car-washing.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/civic.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -297,38 +308,38 @@ header .header-right .menu-toggle {
 /* RESPONSIVE */
 @media(max-width:768px) {
 
-    /* MOSTRAR ICONO */
-    header .header-right .menu-toggle {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
         display: block;
     }
 
-    /* MENÚ MOBILE */
-    nav {
-        position: fixed;
-        top: 0px;
+    .menu-icono {
+        display: block;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
         right: 0;
-        height: 100vh;
-        width: 250px;
         background: #020617;
+        display: none;
+    }
 
+    .navbar ul {
         flex-direction: column;
-        padding-top: 80px;
-
-        /* OCULTO */
-        transform: translateX(100%);
-        transition: transform .4s ease;
+        align-items: center;
+        padding: 20px 0;
     }
 
-    /* CUANDO SE ABRE */
-    nav.active {
-        transform: translateX(0);
+    .navbar ul li {
+        margin: 15px 0;
     }
 
-    nav a {
-        margin: 20px;
-    }
-
-    .header-right {
-        flex-direction: row;
+    #menu:checked~.navbar {
+        display: block;
     }
 }

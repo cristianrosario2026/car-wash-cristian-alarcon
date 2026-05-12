@@ -8,7 +8,7 @@
     <meta name="keywords" content="Car Wash, lavado de autos, encerado, aspirado, Los Mochis">
     <meta name="author" content="Car Wash Alarcon">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="eWi2eS82ejp6-rCGMbmWDkB52oyT81lhb1TwTP0Gon4"/>
+    <meta name="google-site-verification" content="eWi2eS82ejp6-rCGMbmWDkB52oyT81lhb1TwTP0Gon4" />
     <meta property="og:title" content="Car Wash en Los Mochis">
     <meta property="og:description" content="Lavado de autos, aspirado y encerado. Reserva tu cita fácil y rápido">
     <meta property="og:image" content="https://car-wash-cristian-alarcon.vercel.app/images/car-washing.jpg">
@@ -25,18 +25,25 @@
 <body>
 
     <!-- NAV -->
-    <header>
-        <h1>Car Wash en Los Mochis</h1>
-        <div class="header-right">
-            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
-            <nav id="menu">
-                <a href="#">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#galeria">Galería</a>
-                <a href="#precios">Precios</a>
-                <a href="#opiniones">Opiniones</a>
-                <a href="#ubicacion">Ubicación</a>
-                <a href="#contacto">Contacto</a>
+    <header class="header">
+        <div class="menu container">
+            <div class="logo-text">Car Wash</div>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+
+                <img src="assets/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+
+                <ul>
+                    <li><a href="#inicio" onclick="cerrarMenu()">Inicio</a></li>
+                    <li><a href="#servicios" onclick="cerrarMenu()">Servicios</a></li>
+                    <li><a href="#galeria" onclick="cerrarMenu()">Galería</a></li>
+                    <li><a href="#precios" onclick="cerrarMenu()">Precios</a></li>
+                    <li><a href="#opiniones" onclick="cerrarMenu()">Opiniones</a></li>
+                    <li><a href="#ubicacion" onclick="cerrarMenu()">Ubicación</a></li>
+                    <li><a href="#contacto" onclick="cerrarMenu()">Contacto</a></li>
+                </ul>
             </nav>
         </div>
     </header>
