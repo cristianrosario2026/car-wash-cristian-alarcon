@@ -2,13 +2,17 @@
 <html lang="es">
 
 <head>
+
+    <!-- META DATOS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
     <meta name="description" content="Servicio de lavado de autos. Reserva tu cita fácil y rápido.">
     <meta name="keywords" content="Car Wash, lavado de autos, encerado, aspirado, Los Mochis">
     <meta name="author" content="Car Wash Alarcon">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="eWi2eS82ejp6-rCGMbmWDkB52oyT81lhb1TwTP0Gon4" />
+    <!-- OPEN GRAPH -->
     <meta property="og:title" content="Car Wash en Los Mochis">
     <meta property="og:description" content="Lavado de autos, aspirado y encerado. Reserva tu cita fácil y rápido">
     <meta property="og:image" content="https://car-wash-cristian-alarcon.vercel.app/images/car-washing.jpg">
@@ -16,21 +20,23 @@
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
     <title>Car Wash en Los Mochis | Lavado de Autos</title>
+    <!-- ESTILOS -->
     <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAV -->
+    <!-- ENCABEZADO Y MENU DE NAVEGACIÓN -->
     <header class="header">
         <div class="menu container">
-            <div class="logo-text">Car Wash Alarcon</div>
+            <div class="logo-text">Car Wash Alarcón</div>
             <input type="checkbox" id="menu">
             <label for="menu">
-
                 <img src="assets/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
@@ -48,116 +54,119 @@
         </div>
     </header>
 
-    <!-- INICIO -->
-    <section class="hero" id="inicio">
-        <h2 data-aos="fade-up">Deja tu auto como nuevo 🚗✨</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Servicio profesional de lavado</p>
-    </section>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
 
-    <!-- SERVICIOS -->
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="cards">
-
-            <div class="card" data-aos="fade-up">
-                <i class="fas fa-car"></i>
-                <h3>Lavado Exterior + Interior</h3>
+        <!-- INICIO -->
+        <section id="inicio">
+            <div class="hero">
+                <h2 data-aos="fade-up">Deja tu auto como nuevo 🚗✨</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Servicio profesional de lavado</p>
             </div>
+        </section>
 
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-wind"></i>
-                <h3>Aspirado</h3>
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards">
+                <article class="card" data-aos="fade-up">
+                    <i class="fas fa-car"></i>
+                    <h3>Lavado Exterior + Interior</h3>
+                </article>
+                <article class="card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-wind"></i>
+                    <h3>Aspirado</h3>
+                </article>
+                <article class="card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-star"></i>
+                    <h3>Encerado</h3>
+                </article>
             </div>
+        </section>
 
-            <div class="card" data-aos="fade-up" data-aos-delay="400">
-                <i class="fas fa-star"></i>
-                <h3>Encerado</h3>
+        <!-- GALERIA -->
+        <section id="galeria">
+            <h2>Nuestra Galería</h2>
+            <div class="gallery">
+                <img src="images/x-trail.jpg">
+                <img src="images/sierra.jpg">
+                <img src="images/colorado.jpg">
+                <img src="images/camry.jpg">
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- GALERIA -->
-    <section id="galeria">
-        <h2>Nuestra Galería</h2>
-        <div class="gallery">
-            <img src="images/x-trail.jpg">
-            <img src="images/sierra.jpg">
-            <img src="images/colorado.jpg">
-            <img src="images/camry.jpg">
-        </div>
-    </section>
-
-    <!-- PRECIOS -->
-    <section id="precios">
-        <h2>Lista de Precios</h2>
-        <div class="prices">
-            <div class="price">
-                <h3>Lavado Exterior + Interior</h3>
-                <p>Auto Chico — $120 MXN</p>
-                <p>Auto Mediano — $170 MXN</p>
-                <p>Auto Camioneta — $200 MXN</p>
+        <!-- PRECIOS -->
+        <section id="precios">
+            <h2>Lista de Precios</h2>
+            <div class="prices">
+                <article class="price">
+                    <h3>Lavado Exterior + Interior</h3>
+                    <p>Auto Chico — $120 MXN</p>
+                    <p>Auto Mediano — $170 MXN</p>
+                    <p>Auto Camioneta — $200 MXN</p>
+                </article>
+                <article class="price">
+                    <h3>Aspirado</h3>
+                    <p>$50 MXN</p>
+                </article>
+                <article class="price">
+                    <h3>Encerado</h3>
+                    <p>$100 MXN</p>
+                </article>
             </div>
-            <div class="price">
-                <h3>Aspirado</h3>
-                <p>$50 MXN</p>
+        </section>
+
+        <!-- OPINIONES -->
+        <section id="opiniones">
+            <h2>Opiniones de Clientes</h2>
+            <div class="opiniones">
+                <article class="opinion">Excelente servicio, lo recomiendo ⭐⭐⭐⭐⭐</article>
+                <article class="opinion">Mi auto quedó como nuevo, lo recomiendo 100% 🚗</article>
+                <article class="opinion">Dejaron mi camioneta impecable, excelente trabajo ✨</article>
+                <article class="opinion">Muy buena atención y rapidez en el servicio 👌</article>
+                <article class="opinion">Muy buen precio y excelente calidad 💯</article>
+                <article class="opinion">Personal muy amable y profesional 🙌</article>
+                <article class="opinion">Muy puntuales y responsables, recomendado 👍</article>
             </div>
-            <div class="price">
-                <h3>Encerado</h3>
-                <p>$100 MXN</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- OPINIONES -->
-    <section id="opiniones">
-        <h2>Opiniones de Clientes</h2>
-        <div class="opiniones">
-            <div class="opinion">Excelente servicio, lo recomiendo ⭐⭐⭐⭐⭐</div>
-            <div class="opinion">Mi auto quedó como nuevo, lo recomiendo 100% 🚗</div>
-            <div class="opinion">Dejaron mi camioneta impecable, excelente trabajo ✨</div>
-            <div class="opinion">Muy buena atención y rapidez en el servicio 👌</div>
-            <div class="opinion">Muy buen precio y excelente calidad 💯</div>
-            <div class="opinion">Personal muy amable y profesional 🙌</div>
-            <div class="opinion">Muy puntuales y responsables, recomendado 👍</div>
-        </div>
-    </section>
+        <!-- UBICACION -->
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.420537593924!2d-108.9880285742777!3d25.756669611468922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f78014fe0d5%3A0xae572ff3fb2d430b!2sBlvrd%20Pedro%20Anaya%201769%2C%2081295%20Los%20Mochis%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1776450294616!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
-    <!-- UBICACION -->
-    <section id="ubicacion">
-        <h2>Ubicación</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.420537593924!2d-108.9880285742777!3d25.756669611468922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f78014fe0d5%3A0xae572ff3fb2d430b!2sBlvrd%20Pedro%20Anaya%201769%2C%2081295%20Los%20Mochis%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1776450294616!5m2!1ses-419!2smx"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contactos</h2>
+            <form action="https://formsubmit.co/cristianrosario30092000@gmail.com" method="POST">
+                <input type="hidden" name="_next"
+                    value="https://car-wash-cristian-alarcon.vercel.app/pages/gracias.html">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Car Wash">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_replyto" value="email">
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contactos</h2>
-        <form action="https://formsubmit.co/cristianrosario30092000@gmail.com" method="POST">
-            <input type="hidden" name="_next" value="https://car-wash-cristian-alarcon.vercel.app/pages/gracias.html">
-            <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Car Wash">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_replyto" value="email">
-
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="email" name="email" placeholder="Correo" required>
-            <input type="number" name="telefono" placeholder="Telefono" required>
-            <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
-            <a href="https://wa.me/5216681516491?text=🚗 ¡Hola,%20quiero%20reservar%20una%20cita.%20Gracias.!"
-                target="_blank" class="btn-whatsapp">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                <span>Reserva por WhatsApp</span>
-            </a>
-        </form>
-    </section>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo" required>
+                <input type="number" name="telefono" placeholder="Telefono" required>
+                <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+                <a href="https://wa.me/5216681516491?text=🚗 ¡Hola,%20quiero%20reservar%20una%20cita.%20Gracias.!"
+                    target="_blank" class="btn-whatsapp">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    <span>Reserva por WhatsApp</span>
+                </a>
+            </form>
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Car Wash en Los Mochis</p>
+        <p>© 2026 Car Wash Alarcón</p>
     </footer>
 
     <!-- SCRIPTS -->
