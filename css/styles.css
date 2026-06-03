@@ -13,55 +13,70 @@ body {
 }
 
 
-/* MENU ESTILO BARBERIA */
-.menu {
+/* estilo para todos los titulos de cada seccion */
+.titulo-seccion {
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #38bdf8;
+}
+
+/* MENU ESTILO PORTAFOLIO */
+header {
+    background-color: #3b3b3b;
+    border-bottom: 1px solid white;
     position: fixed;
+    width: 100%;
+    z-index: 100;
     top: 0;
-    left: 0;
-    right: 0;
+}
+
+.contenido-header {
+    max-width: 1100px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: #3b3b3b;
-    border-bottom: 1px solid white;
-    z-index: 1000;
+    padding: 10px 20px;
 }
 
-.logo-text {
-    color: #38bdf8;
-    font-size: 28px;
-    font-weight: bold;
+.contenido-header h1 {
+    text-align: center;
+    color: #00c3ff;
 }
 
-.navbar ul {
-    display: flex;
-    gap: 25px;
+.contenido-header nav ul {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-.navbar ul li a {
-    color: #fff;
+.contenido-header nav ul li a {
     text-decoration: none;
-    transition: .3s;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
 }
 
-.navbar ul li a:hover {
-    color: #38bdf8;
+.contenido-header nav ul li a:hover {
+    color: #00c3ff;
 }
 
-#menu {
-    display: none;
+.contenido-header .redes a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
 }
 
-.menu-icono {
-    width: 28px;
-    cursor: pointer;
-    display: none;
+.contenido-header .seleccionado {
+    color: #00c3ff;
 }
 
-.menu label {
-    cursor: pointer;
+#icono-nav {
+    color: #fff;
     display: none;
 }
 
@@ -306,40 +321,34 @@ footer {
 }
 
 /* RESPONSIVE */
-@media(max-width:768px) {
+@media(max-width:800px) {
 
-    .menu {
-        padding: 20px;
-    }
-
-    .menu label {
-        display: block;
-    }
-
-    .menu-icono {
-        display: block;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #020617;
+    nav {
         display: none;
     }
 
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
-
-    .navbar ul li {
-        margin: 15px 0;
-    }
-
-    #menu:checked~.navbar {
+    nav.responsive {
         display: block;
+        background-color: rgba(49, 49, 49, 0.9);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin: 10px 0;
+    }
+
+    #icono-nav {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
     }
 }
