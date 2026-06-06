@@ -21,7 +21,7 @@ body {
     color: #38bdf8;
 }
 
-/* MENU ESTILO PORTAFOLIO */
+/* ENCABEZADO */
 header {
     background-color: #3b3b3b;
     border-bottom: 1px solid white;
@@ -32,7 +32,7 @@ header {
 }
 
 .contenido-header {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -63,13 +63,6 @@ header {
     color: #00c3ff;
 }
 
-.contenido-header .redes a {
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-    margin-left: 10px;
-    transition: .5s;
-}
 
 .contenido-header .seleccionado {
     color: #00c3ff;
@@ -89,9 +82,10 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/civic.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/civic.jpg');
     background-size: 100% auto;
     background-position: center;
+    background-repeat: no-repeat;
     padding: 0;
     position: relative;
     z-index: 1;
@@ -321,6 +315,13 @@ footer {
 }
 
 /* RESPONSIVE */
+
+/* 📱 TABLET (hasta 1024px) */
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* 📱 CELULAR (hasta 800px) */
 @media(max-width:800px) {
 
     nav {
