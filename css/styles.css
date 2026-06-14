@@ -75,24 +75,25 @@ header {
 
 
 /* HERO */
-.hero {
-    height: 100vh;
+#inicio {
+    height: 115vh;
     display: flex;
-    flex-direction: column;
+
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/civic.jpg');
-    background-size: 100% auto;
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../images/civic.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    padding: 0;
-    position: relative;
-    z-index: 1;
+    background-position: center;
+    
+    
+    
 }
 
 .hero h2,
 .hero p {
+    justify-content: center;
     position: relative;
     z-index: 2;
     color: white;
